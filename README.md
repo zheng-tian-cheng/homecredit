@@ -46,6 +46,15 @@
 
 ## 双人协作约定
 
+仓库地址：<https://github.com/zheng-tian-cheng/homecredit>
+
+仓库当前为 private。仓库所有者先在 GitHub 的 **Settings → Collaborators → Add people** 输入队友的 GitHub 用户名并发送邀请；队友接受后即可克隆和推送分支：
+
+```bash
+git clone https://github.com/zheng-tian-cheng/homecredit.git
+cd homecredit
+```
+
 每个人从 `main` 创建自己的功能分支，例如：
 
 ```bash
@@ -71,4 +80,3 @@ git push -u origin feature/eda
 ```bash
 python -m unittest discover -s tests
 ```
-

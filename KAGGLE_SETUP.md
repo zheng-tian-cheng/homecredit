@@ -5,7 +5,7 @@
 在 Kaggle Notebook 的第一个代码单元运行：
 
 ```python
-!git clone https://github.com/<OWNER>/homecredit.git /kaggle/working/homecredit
+!git clone https://github.com/zheng-tian-cheng/homecredit.git /kaggle/working/homecredit
 
 import sys
 sys.path.insert(0, "/kaggle/working/homecredit/src")
@@ -25,7 +25,7 @@ sys.path.insert(0, "/kaggle/working/homecredit/src")
 from kaggle_secrets import UserSecretsClient
 
 token = UserSecretsClient().get_secret("GITHUB_TOKEN")
-owner = "<OWNER>"
+owner = "zheng-tian-cheng"
 repo = "homecredit"
 clone_url = f"https://x-access-token:{token}@github.com/{owner}/{repo}.git"
 
@@ -61,4 +61,3 @@ os.environ["HOME_CREDIT_DATA_ROOT"] = "/path/to/small/sample"
 ## 保存结果
 
 Kaggle 的可写目录是 `/kaggle/working`。大型模型与中间结果保留在 Kaggle Output/Dataset 中；GitHub 只提交指标表、图表或文字总结等小文件。
-
